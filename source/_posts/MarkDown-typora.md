@@ -1,5 +1,5 @@
 ---
-title: 小虫的markdown工具 Typora 教程
+title: markdown工具 Typora 教程
 date: 2019-10-07 22:26:56
 tags:
     - 文本工具

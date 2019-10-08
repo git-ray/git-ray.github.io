@@ -1,11 +1,11 @@
 ---
-title: 小虫言传身教的 hexo 博客网站搭建
+title: hexo博客网站一条龙
 date: 2019-10-06 22:27:55
 tags:
     - 工具
     - 服務器
 comments: true
-categories: 类型1
+categories: 建站
 
 updated: 2019-10-07 22:27:55
 ---
