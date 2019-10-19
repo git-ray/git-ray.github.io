@@ -7,6 +7,10 @@ comments: true
 categories: 工具
 ---
 
+[TOC]
+
+
+
 # Typora教程 
 
 ## 1.标题
@@ -28,6 +32,8 @@ ctrl + u
 alt + shift + 5
 
 ~~删除线~~
+
+
 
 ---
 
@@ -145,7 +151,7 @@ ctrl + k
 
 ​	![jay](H:\桌面\deskEditWork\ray-hexo\git-ray.github.io\public\img\jay.jpg)
 
-
+![](http://kityminder-img.gz.bcebos.com/5400df503d9a8a494e2b57b13757ff63149e7a1e)
 
 ---
 

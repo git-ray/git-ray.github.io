@@ -12,15 +12,20 @@ but 现在作为一个 初级 前端程序员 ，博客自然少不了的！
 
 
 ## **前端个人作品**
-
-##### 更新中...
+[徐小虫影视webapp](http://118.89.172.239:8080)
+---
+手机浏览器地址： xuxc.xyz
+---
+如果是电脑打开建议用谷歌浏览器 按F12 选择移动端模式，
+测试账号： daxiang 密码： 123456
+##### 待完善更新中 自己注册的号目前不支持观看...
 
 ## **关于这个博客**
 是 **徐小虫** 的个人站。
 
 到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。
 
-本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次
+<!-- 本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次 -->
 
 ## **博客平台**
 这个博客通过 [Hexo](https://hexo.io/) 生成，部署在 [GitHub ](https://github.com/git-ray/git-ray.github.io/)，主题 [3-hexo](https://github.com/yelog/hexo-theme-3-hexo) 已经在github上开源

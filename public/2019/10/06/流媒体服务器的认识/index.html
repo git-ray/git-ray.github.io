@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <title>跨域以及跨域的方法 | 徐小虫</title>
+  <meta name="keywords" content=" 服务器 , 视频 ">
+  <meta name="description" content="跨域以及跨域的方法 | 徐小虫">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="[TOC] Typora教程1.标题使用简单的 ctrl+数字键 就可以快速完成各种级别的标题 2.下划线ctrl + u 下划线  3.删除线alt + shift + 5 删除线  4.字体加粗ctrl_+ b 5.斜体字ctr + i 字体倾斜  6.无序列表123* 无序列表1+ 无序列表2- 无序列表3  一级：减号+space + 回车N级： tab + 回车退出当前层级：回车+回车+">
+<meta name="keywords" content="文本工具">
+<meta property="og:type" content="article">
+<meta property="og:title" content="markdown工具 Typora 教程">
+<meta property="og:url" content="https://git-ray.github.io/2019/10/07/MarkDown-typora/index.html">
+<meta property="og:site_name" content="徐小虫">
+<meta property="og:description" content="[TOC] Typora教程1.标题使用简单的 ctrl+数字键 就可以快速完成各种级别的标题 2.下划线ctrl + u 下划线  3.删除线alt + shift + 5 删除线  4.字体加粗ctrl_+ b 5.斜体字ctr + i 字体倾斜  6.无序列表123* 无序列表1+ 无序列表2- 无序列表3  一级：减号+space + 回车N级： tab + 回车退出当前层级：回车+回车+">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="h:%5C%E6%A1%8C%E9%9D%A2%5CdeskEditWork%5Cray-hexo%5Cgit-ray.github.io%5Cpublic%5Cimg%5Cjay.jpg">
+<meta property="og:image" content="http://kityminder-img.gz.bcebos.com/5400df503d9a8a494e2b57b13757ff63149e7a1e">
+<meta property="og:updated_time" content="2019-10-19T16:48:57.160Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="markdown工具 Typora 教程">
+<meta name="twitter:description" content="[TOC] Typora教程1.标题使用简单的 ctrl+数字键 就可以快速完成各种级别的标题 2.下划线ctrl + u 下划线  3.删除线alt + shift + 5 删除线  4.字体加粗ctrl_+ b 5.斜体字ctr + i 字体倾斜  6.无序列表123* 无序列表1+ 无序列表2- 无序列表3  一级：减号+space + 回车N级： tab + 回车退出当前层级：回车+回车+">
+<meta name="twitter:image" content="h:%5C%E6%A1%8C%E9%9D%A2%5CdeskEditWork%5Cray-hexo%5Cgit-ray.github.io%5Cpublic%5Cimg%5Cjay.jpg">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+<script src="/js/iconfont.js?v=1.0.1"></script>
+
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="true">
+  <input class="theme_blog_path" value>
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>徐小虫</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/git-ray" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a title="email" href="mailto:648192494@qq.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=648192494&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=326823966" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(27)</small></div></li>
+    
+        
+            
+            <li><div data-rel="工具">工具<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="建站">建站<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="数据">数据<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="前端">前端<small>(20)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="后端">后端<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="服务器">服务器<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="27">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://xuxc.xyz/">徐小虫</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="Search..." autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color5">文本工具</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color3">工具</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color4">服務器</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color4">数据库</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color3">框架</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color3">前端</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color4">VUE</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color4">css</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color3">JS</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color4">ES6</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color4">CSS</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color4">响应式</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color3">动画</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color5">AJAX</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color5">HTML</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color1">JavaScript</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color1">token</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color1">Token</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color5">开发常识</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color5">Less</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color2">Nodejs</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color3">后端</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color4">脚手架</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color4">服务器</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color3">视频</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a id="top" class="后端 "
+           href="/2019/10/06/Express-generator 脚手架/"
+           data-tag="前端,Nodejs,后端,脚手架"
+           data-author="" >
+            <span class="post-title" title="Express-generator 脚手架">Express-generator 脚手架</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a id="top" class="前端 "
+           href="/2019/10/06/跨域以及跨域的方法/"
+           data-tag="前端,JavaScript"
+           data-author="" >
+            <span class="post-title" title="跨域以及跨域的方法">跨域以及跨域的方法</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a id="top" class="前端 "
+           href="/2019/10/06/vuex公共数据仓库的使用/"
+           data-tag="框架,前端,VUE"
+           data-author="" >
+            <span class="post-title" title="vux公共数据仓库的使用">vux公共数据仓库的使用</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a id="top" class="前端 "
+           href="/2019/10/06/vue中的动画/"
+           data-tag="框架,前端,VUE"
+           data-author="" >
+            <span class="post-title" title="vue中的动画：【transation】【transationGroup】">vue中的动画：【transation】【transationGroup】</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a id="top" class="前端 "
+           href="/2019/10/06/VUE项目性能优化/"
+           data-tag="框架,前端,VUE"
+           data-author="" >
+            <span class="post-title" title="VUE项目性能优化">VUE项目性能优化</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a id="top" class="前端 "
+           href="/2019/10/06/flex布局 (IE至少11)/"
+           data-tag="前端,CSS,响应式"
+           data-author="" >
+            <span class="post-title" title="CSS-flex基础">CSS-flex基础</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/10/07/MarkDown-typora/"
+           data-tag="文本工具"
+           data-author="" >
+            <span class="post-title" title="markdown工具 Typora 教程">markdown工具 Typora 教程</span>
+            <span class="post-date" title="2019-10-07 22:26:56">2019/10/07</span>
+        </a>
+        
+        <a  class="建站 "
+           href="/2019/10/06/linux+nginx+hexo/"
+           data-tag="工具,服務器"
+           data-author="" >
+            <span class="post-title" title="hexo博客网站一条龙">hexo博客网站一条龙</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="建站 "
+           href="/2019/10/06/linux-nginx/"
+           data-tag="工具,服務器"
+           data-author="" >
+            <span class="post-title" title="Linux下安装nginx">Linux下安装nginx</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="建站 "
+           href="/2019/10/06/Linux下安装使用nodjs+pm2/"
+           data-tag="工具,服務器"
+           data-author="" >
+            <span class="post-title" title="Linux下安装使用nodejs+pm2">Linux下安装使用nodejs+pm2</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="数据 "
+           href="/2019/10/06/Linux-mysql/"
+           data-tag="工具,数据库"
+           data-author="" >
+            <span class="post-title" title="Linux下安装mysql和走过的坑">Linux下安装mysql和走过的坑</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/10/06/vue-collection1/"
+           data-tag="框架,前端,VUE"
+           data-author="" >
+            <span class="post-title" title="VUE框架基础指令">VUE框架基础指令</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/10/06/VUE生命周期图解/"
+           data-tag="框架,前端,VUE"
+           data-author="" >
+            <span class="post-title" title="VUE生命周期图解">VUE生命周期图解</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/10/06/CSS隐藏元素的四种方法/"
+           data-tag="前端,css"
+           data-author="" >
+            <span class="post-title" title="CSS隐藏元素的五种方法">CSS隐藏元素的五种方法</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/10/06/css文本间距和文本溢出的处理/"
+           data-tag="前端,css"
+           data-author="" >
+            <span class="post-title" title="css文本间距和文本溢出的处理">css文本间距和文本溢出的处理</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/10/06/JS中forEach,for...in,for..of的区别/"
+           data-tag="前端,JS"
+           data-author="" >
+            <span class="post-title" title="forEach,for...in,for..of的区别">forEach,for...in,for..of的区别</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/10/06/generator 函数/"
+           data-tag="前端,JS,ES6"
+           data-author="" >
+            <span class="post-title" title="generator 函数">generator 函数</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/10/06/CSS隐藏元素的五种方法/"
+           data-tag="前端,css"
+           data-author="" >
+            <span class="post-title" title="CSS隐藏元素的五种方法">CSS隐藏元素的五种方法</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/10/06/CSS-animation动画2D与3D/"
+           data-tag="前端,CSS,动画"
+           data-author="" >
+            <span class="post-title" title="CSS-animation动画2D与3D">CSS-animation动画2D与3D</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/10/06/AJAX基础/"
+           data-tag="前端,AJAX"
+           data-author="" >
+            <span class="post-title" title="AJAX基础">AJAX基础</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/10/06/HTML5 应用程序缓存  manifest/"
+           data-tag="前端,HTML"
+           data-author="" >
+            <span class="post-title" title="HTML5 应用程序缓存  manifest">HTML5 应用程序缓存  manifest</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/10/06/json字符串、json对象、数组 三者之间的转换/"
+           data-tag="前端,JavaScript"
+           data-author="" >
+            <span class="post-title" title="json字符串、json对象、数组 三者之间的转换">json字符串、json对象、数组 三者之间的转换</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/10/06/Token身份验证/"
+           data-tag="前端,JavaScript,Token"
+           data-author="" >
+            <span class="post-title" title="Token身份验证">Token身份验证</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/10/06/内存溢出内存泄露/"
+           data-tag="开发常识"
+           data-author="" >
+            <span class="post-title" title="内存溢出内存泄露">内存溢出内存泄露</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/10/06/Less的使用/"
+           data-tag="CSS,Less"
+           data-author="" >
+            <span class="post-title" title="Less的使用">Less的使用</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/10/06/css文本间距和文本溢出的处理 (copy)/"
+           data-tag="前端,css"
+           data-author="" >
+            <span class="post-title" title="css文本间距和文本溢出的处理">css文本间距和文本溢出的处理</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+        <a  class="服务器 "
+           href="/2019/10/06/流媒体服务器的认识/"
+           data-tag="服务器,视频"
+           data-author="" >
+            <span class="post-title" title="跨域以及跨域的方法">跨域以及跨域的方法</span>
+            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-流媒体服务器的认识" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">跨域以及跨域的方法</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a href="javascript:" data-rel="服务器">服务器</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="javascript:" class="color4">服务器</a>
+            
+            <a href="javascript:" class="color3">视频</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-10-07 22:27:55'>2019-10-06 22:27</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#VOD-流媒体系统"><span class="toc-text">VOD  流媒体系统</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#视频上传"><span class="toc-text">视频上传</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#视频转码"><span class="toc-text">视频转码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#视频播放"><span class="toc-text">视频播放</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本篇 非原创  只注明了其中一个作者出处，另一个找不到了。</p>
+<h1 id="VOD-流媒体系统"><a href="#VOD-流媒体系统" class="headerlink" title="VOD  流媒体系统"></a>VOD  流媒体系统</h1><h2 id="视频上传"><a href="#视频上传" class="headerlink" title="视频上传"></a>视频上传</h2><ul>
+<li>格式<ul>
+<li>支持的源音视频文件格式：3gpp, asf/wmv, avi, flv/f4v, mkv, mov/mp4/m4a, mp3, mp2, mpeg/mpg, ts/ogg, mts, wmv/wma, rm/rmvb, webm等。</li>
+<li>支持的视频编码标准：H.264, H.263/H.263+, MPEG-1/2/4, VP8/9, Quicktime, RealVideo, WMV, MJPEG等。</li>
+<li>支持的音频编码标准：MP1, MP2, MP3, AAC, AC-3, WMA, PCM, ADPCM, AMR, RealAudio, Vorbis, DSD等。</li>
+</ul>
+</li>
+<li>上传方式：<ul>
+<li>登录控制台直接上传:适用于少量视频文件，且视频较小（单视频小于5GB），每次最多300个视频文件。</li>
+<li>服务器端上传：使用VOD Java或PHP SDK，在服务器端上传。</li>
+<li>网页端上传：使用VOD JS SDK，可以通过网页直接上传。</li>
+<li>APP手机端上传：使用BOS iOS、Android SDK可以在手机端上传。</li>
+</ul>
+</li>
+</ul>
+<h2 id="视频转码"><a href="#视频转码" class="headerlink" title="视频转码"></a>视频转码</h2><ul>
+<li><p>支持发布哪些视频格式？</p>
+<ul>
+<li><p>支持MP4、HLS、A-HLS、FLV。这里详细介绍常用的视频点播格式：</p>
+</li>
+<li><p>MP4<br>优点：常见的视频格式，适用范围广，在移动端和PC端的支持都很好，非常适合短视频（比如时长在5分钟以内）。在iOS和多数Andriod端，直接使用系统浏览器即可播放；在PC端，使用flash等控件进行播放。<br>缺点：由于MP4文件格式相对复杂，处理时间和成本高，对于长视频（比如时长在半小时以上），可能加载速度会慢。</p>
+</li>
+<li><p>HLS<br>优点：苹果公司的标准，推荐在移动端浏览器使用，加载速度快，多码率自适应能力强，适合对视频进行加密播放。<br>缺点：下载易用性较差，PC 端支持能力弱，对播放器要求高。</p>
+</li>
+<li><p>A-HLS<br>优点：A-HLS是多码率自适应的HLS格式，VOD 根据用户设置的最高分辨率、码率，自动转码生成最多高、中、 低3种码流（具体副本数和原始视频的码率有关）。当终端用户播放时，播放器会自动监测观看者当前网络情况，选择合适的码率，做好观看的流畅度和清晰度的权衡，让用户自动获取到最佳体验。<br>缺点：占用存储空间多。</p>
+</li>
+<li><p>FLV<br>优点：adobe公司的标准，适用于PC端浏览器，依赖flash。<br>缺点：大部分移动端浏览器均不支持。</p>
+</li>
+<li><p><img src="https://i.loli.net/2019/10/20/brD9617s3OFukyg.png" alt="1571514794_1_.jpg"></p>
+</li>
+<li><p>来解释一下这张图，从左到右讲，左下方的inputs的视频源是什么格式都无所谓，他与server之间的通信协议也可以任意（比如RTMP），<br>总之只要把视频数据传输到服务器上即可。这个视频在server服务器上被转换成HLS格式的视频（既TS和m3u8文件）文件。<br>细拆分来看server里面的Media encoder的是一个转码模块负责将视频源中的视频数据转码到目标编码格式（H264）的视频数据，<br>视频源的编码格式可以是任何的视频编码格式（参考《视频技术基础》<br>）。转码成H264视频数据之后，在stream segmenter模块将视频切片，<br>切片的结果就是index file（m3u8）和ts文件了。图中的Distribution其实只是一个普通的HTTP文件服务器，然后客户端只需要访问一级index文件的路径就会自动播放HLS视频流了。</p>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>出处链接：https://www.jianshu.com/p/426425cad08a</code></pre><p>  关于自动转码</p>
+<ul>
+<li><p>1 视频上传成功后的转码操作是自动执行</p>
+</li>
+<li><p>2 音视频直播LSS录制下来的视频不会转码，但会进行视频元信息、封面图提取等操作</p>
+<p>默认转码模板</p>
+</li>
+<li><p>默认转码模板是将源视频转码成自适应多码率的HLS格式的目标视频，<br>会自动生成高、中、低清晰度的多个码率目标视频，播放时根据网络情况自动切换。<br>用户可以自主更换转码模板组，可以自定义每个视频的转码模板参数，包括分辨率、码率、格式等。</p>
+<p>如何得知转码结束并发布成功</p>
+</li>
+<li><p>可以设置回调地址，每个视频发布成功时，会将消息通知到回调地址中。或者可以使用API查询媒资状态。</p>
+</li>
+</ul>
+<h2 id="视频播放"><a href="#视频播放" class="headerlink" title="视频播放"></a>视频播放</h2><ul>
+<li>CDN服务<ul>
+<li>VOD产品  一般内部已经集成了CDN，播放地址都是CDN加速的</li>
+</ul>
+</li>
+<li>可以实时对封面图进行缩放、裁剪，适应不同设备尺寸吗？<ul>
+<li>VOD集成了图片处理服务，可以直接在封面图URL后加处理参数，实现对图片的实时处理，包括等比例缩放、裁剪、加水印等。</li>
+</ul>
+</li>
+<li>为什么有播放流量限制？如何取消限制？<ul>
+<li>按照国家有关部门规定，提供网络视频相关业务需具备相关资质，因此VOD默认限制流量仅用于测试试用。<br>如果您需要正式上线业务，需要先完成企业认证，再提交相关资质申请商用，商用通过后即可取消流量限制。</li>
+</ul>
+</li>
+</ul>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 serious_ray@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a href="javascript:void(0)" class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>跨域以及跨域的方法</p>
+    
+    <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="徐小虫">徐小虫</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-10-06, 22:27:55</p>
+    <p><span class="copy-title">最后更新:</span>2019-10-07, 22:27:55</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/10/06/流媒体服务器的认识/" title="跨域以及跨域的方法">https://git-ray.github.io/2019/10/06/流媒体服务器的认识/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2016-2019 xuxc</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" href="javascript:void(0)"></a>
+    </div>
+</div>
+<div class="acParent"></div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#文本工具','#工具','#服務器','#数据库','#框架','#前端','#VUE','#css','#JS','#ES6','#CSS','#响应式','#动画','#AJAX','#HTML','#JavaScript','#token','#Token','#开发常识','#Less','#Nodejs','#后端','#脚手架','#服务器','#视频',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("https://i.loli.net/2019/10/08/T6I5RLAb7yQl4ps.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+<div style="position:absolute; bottom: 0; right: 0;">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1311130595&auto=1&height=66"></iframe>
+</div>
+
+</html>
