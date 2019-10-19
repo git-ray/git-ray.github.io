@@ -6,21 +6,27 @@
   <meta name="keywords" content>
   <meta name="description" content="徐小虫">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="[TOC] Typora教程1.标题使用简单的 ctrl+数字键 就可以快速完成各种级别的标题 2.下划线ctrl + u 下划线  3.删除线alt + shift + 5 删除线  4.字体加粗ctrl_+ b 5.斜体字ctr + i 字体倾斜  6.无序列表123* 无序列表1+ 无序列表2- 无序列表3  一级：减号+space + 回车N级： tab + 回车退出当前层级：回车+回车+">
-<meta name="keywords" content="文本工具">
+<meta name="description" content="[TOC] 什么是跨域由于浏览器同源策略，凡是发送请求url的协议、域名、端口三者之间任意一个与当前页面地址不同即为跨域。存在跨域的情况：  网络协议不同，如http协议访问https协议。 端口不同，如80端口访问8080端口。 域名不同，如qianduanblog.com访问baidu.com。 子域名不同，如abc.qianduanblog.com访问def.qianduanblog.com">
+<meta name="keywords" content="前端,JavaScript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="markdown工具 Typora 教程">
-<meta property="og:url" content="https://git-ray.github.io/2019/10/07/MarkDown-typora/index.html">
+<meta property="og:title" content="跨域以及跨域的方法">
+<meta property="og:url" content="https://git-ray.github.io/2019/10/06/跨域以及跨域的方法/index.html">
 <meta property="og:site_name" content="徐小虫">
-<meta property="og:description" content="[TOC] Typora教程1.标题使用简单的 ctrl+数字键 就可以快速完成各种级别的标题 2.下划线ctrl + u 下划线  3.删除线alt + shift + 5 删除线  4.字体加粗ctrl_+ b 5.斜体字ctr + i 字体倾斜  6.无序列表123* 无序列表1+ 无序列表2- 无序列表3  一级：减号+space + 回车N级： tab + 回车退出当前层级：回车+回车+">
+<meta property="og:description" content="[TOC] 什么是跨域由于浏览器同源策略，凡是发送请求url的协议、域名、端口三者之间任意一个与当前页面地址不同即为跨域。存在跨域的情况：  网络协议不同，如http协议访问https协议。 端口不同，如80端口访问8080端口。 域名不同，如qianduanblog.com访问baidu.com。 子域名不同，如abc.qianduanblog.com访问def.qianduanblog.com">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="h:%5C%E6%A1%8C%E9%9D%A2%5CdeskEditWork%5Cray-hexo%5Cgit-ray.github.io%5Cpublic%5Cimg%5Cjay.jpg">
-<meta property="og:image" content="http://kityminder-img.gz.bcebos.com/5400df503d9a8a494e2b57b13757ff63149e7a1e">
-<meta property="og:updated_time" content="2019-10-19T16:48:57.160Z">
+<meta property="og:image" content="https://i.loli.net/2019/10/20/qWMjmuYSEQ9GfBL.png">
+<meta property="og:image" content="https://i.loli.net/2019/10/20/NCUyL6HvoDalPEV.png">
+<meta property="og:image" content="https://i.loli.net/2019/10/20/BtbPwnQGYCxeohu.png">
+<meta property="og:image" content="https://i.loli.net/2019/10/20/5rznbLxMdjhBoWV.png">
+<meta property="og:image" content="https://i.loli.net/2019/10/20/yROB9aW2xKNVwD5.png">
+<meta property="og:image" content="https://i.loli.net/2019/10/20/IYrfgTRkWOCcVoZ.png">
+<meta property="og:image" content="https://i.loli.net/2019/10/20/fBALds24kGEDpYM.png">
+<meta property="og:image" content="https://i.loli.net/2019/10/20/avFLdskC1ZQEwAi.png">
+<meta property="og:updated_time" content="2019-10-07T14:27:55.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="markdown工具 Typora 教程">
-<meta name="twitter:description" content="[TOC] Typora教程1.标题使用简单的 ctrl+数字键 就可以快速完成各种级别的标题 2.下划线ctrl + u 下划线  3.删除线alt + shift + 5 删除线  4.字体加粗ctrl_+ b 5.斜体字ctr + i 字体倾斜  6.无序列表123* 无序列表1+ 无序列表2- 无序列表3  一级：减号+space + 回车N级： tab + 回车退出当前层级：回车+回车+">
-<meta name="twitter:image" content="h:%5C%E6%A1%8C%E9%9D%A2%5CdeskEditWork%5Cray-hexo%5Cgit-ray.github.io%5Cpublic%5Cimg%5Cjay.jpg">
+<meta name="twitter:title" content="跨域以及跨域的方法">
+<meta name="twitter:description" content="[TOC] 什么是跨域由于浏览器同源策略，凡是发送请求url的协议、域名、端口三者之间任意一个与当前页面地址不同即为跨域。存在跨域的情况：  网络协议不同，如http协议访问https协议。 端口不同，如80端口访问8080端口。 域名不同，如qianduanblog.com访问baidu.com。 子域名不同，如abc.qianduanblog.com访问def.qianduanblog.com">
+<meta name="twitter:image" content="https://i.loli.net/2019/10/20/qWMjmuYSEQ9GfBL.png">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -348,11 +354,11 @@
     <nav id="title-list-nav">
         
         <a id="top" class="后端 "
-           href="/2019/10/06/Express-generator 脚手架/"
+           href="/2019/10/02/Express-generator 脚手架/"
            data-tag="前端,Nodejs,后端,脚手架"
            data-author="" >
             <span class="post-title" title="Express-generator 脚手架">Express-generator 脚手架</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+            <span class="post-date" title="2019-10-02 00:56:43">2019/10/02</span>
         </a>
         
         <a id="top" class="前端 "
@@ -364,203 +370,203 @@
         </a>
         
         <a id="top" class="前端 "
-           href="/2019/10/06/vuex公共数据仓库的使用/"
+           href="/2019/08/30/vuex公共数据仓库的使用/"
            data-tag="框架,前端,VUE"
            data-author="" >
             <span class="post-title" title="vux公共数据仓库的使用">vux公共数据仓库的使用</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+            <span class="post-date" title="2019-08-30 09:15:28">2019/08/30</span>
         </a>
         
         <a id="top" class="前端 "
-           href="/2019/10/06/vue中的动画/"
+           href="/2019/05/17/vue中的动画/"
            data-tag="框架,前端,VUE"
            data-author="" >
             <span class="post-title" title="vue中的动画：【transation】【transationGroup】">vue中的动画：【transation】【transationGroup】</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+            <span class="post-date" title="2019-05-17 12:22:33">2019/05/17</span>
         </a>
         
         <a id="top" class="前端 "
-           href="/2019/10/06/VUE项目性能优化/"
+           href="/2019/08/11/VUE项目性能优化/"
            data-tag="框架,前端,VUE"
            data-author="" >
             <span class="post-title" title="VUE项目性能优化">VUE项目性能优化</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+            <span class="post-date" title="2019-08-11 08:50:36">2019/08/11</span>
         </a>
         
         <a id="top" class="前端 "
-           href="/2019/10/06/flex布局 (IE至少11)/"
+           href="/2019/06/15/flex布局 (IE至少11)/"
            data-tag="前端,CSS,响应式"
            data-author="" >
             <span class="post-title" title="CSS-flex基础">CSS-flex基础</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+            <span class="post-date" title="2019-06-15 16:37:16">2019/06/15</span>
         </a>
         
-        <a  class="工具 "
-           href="/2019/10/07/MarkDown-typora/"
-           data-tag="文本工具"
-           data-author="" >
-            <span class="post-title" title="markdown工具 Typora 教程">markdown工具 Typora 教程</span>
-            <span class="post-date" title="2019-10-07 22:26:56">2019/10/07</span>
-        </a>
-        
-        <a  class="建站 "
-           href="/2019/10/06/linux+nginx+hexo/"
-           data-tag="工具,服務器"
-           data-author="" >
-            <span class="post-title" title="hexo博客网站一条龙">hexo博客网站一条龙</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
-        </a>
-        
-        <a  class="建站 "
-           href="/2019/10/06/linux-nginx/"
-           data-tag="工具,服務器"
-           data-author="" >
-            <span class="post-title" title="Linux下安装nginx">Linux下安装nginx</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
-        </a>
-        
-        <a  class="建站 "
-           href="/2019/10/06/Linux下安装使用nodjs+pm2/"
-           data-tag="工具,服務器"
-           data-author="" >
-            <span class="post-title" title="Linux下安装使用nodejs+pm2">Linux下安装使用nodejs+pm2</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
-        </a>
-        
-        <a  class="数据 "
-           href="/2019/10/06/Linux-mysql/"
-           data-tag="工具,数据库"
-           data-author="" >
-            <span class="post-title" title="Linux下安装mysql和走过的坑">Linux下安装mysql和走过的坑</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
-        </a>
-        
-        <a  class="前端 "
-           href="/2019/10/06/vue-collection1/"
-           data-tag="框架,前端,VUE"
-           data-author="" >
-            <span class="post-title" title="VUE框架基础指令">VUE框架基础指令</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
-        </a>
-        
-        <a  class="前端 "
-           href="/2019/10/06/VUE生命周期图解/"
-           data-tag="框架,前端,VUE"
-           data-author="" >
-            <span class="post-title" title="VUE生命周期图解">VUE生命周期图解</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
-        </a>
-        
-        <a  class="前端 "
-           href="/2019/10/06/CSS隐藏元素的四种方法/"
-           data-tag="前端,css"
-           data-author="" >
-            <span class="post-title" title="CSS隐藏元素的五种方法">CSS隐藏元素的五种方法</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
-        </a>
-        
-        <a  class="前端 "
-           href="/2019/10/06/css文本间距和文本溢出的处理/"
-           data-tag="前端,css"
-           data-author="" >
-            <span class="post-title" title="css文本间距和文本溢出的处理">css文本间距和文本溢出的处理</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
-        </a>
-        
-        <a  class="前端 "
-           href="/2019/10/06/JS中forEach,for...in,for..of的区别/"
-           data-tag="前端,JS"
-           data-author="" >
-            <span class="post-title" title="forEach,for...in,for..of的区别">forEach,for...in,for..of的区别</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
-        </a>
-        
-        <a  class="前端 "
-           href="/2019/10/06/generator 函数/"
-           data-tag="前端,JS,ES6"
-           data-author="" >
-            <span class="post-title" title="generator 函数">generator 函数</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
-        </a>
-        
-        <a  class="前端 "
-           href="/2019/10/06/CSS隐藏元素的五种方法/"
-           data-tag="前端,css"
-           data-author="" >
-            <span class="post-title" title="CSS隐藏元素的五种方法">CSS隐藏元素的五种方法</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
-        </a>
-        
-        <a  class="前端 "
-           href="/2019/10/06/CSS-animation动画2D与3D/"
+        <a id="top" class="前端 "
+           href="/2019/06/22/CSS-animation动画2D与3D/"
            data-tag="前端,CSS,动画"
            data-author="" >
             <span class="post-title" title="CSS-animation动画2D与3D">CSS-animation动画2D与3D</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+            <span class="post-date" title="2019-06-22 22:48:55">2019/06/22</span>
         </a>
         
-        <a  class="前端 "
-           href="/2019/10/06/AJAX基础/"
-           data-tag="前端,AJAX"
+        <a  class="建站 "
+           href="/2019/10/12/linux+nginx+hexo/"
+           data-tag="工具,服務器"
            data-author="" >
-            <span class="post-title" title="AJAX基础">AJAX基础</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+            <span class="post-title" title="hexo博客网站一条龙">hexo博客网站一条龙</span>
+            <span class="post-date" title="2019-10-12 19:08:12">2019/10/12</span>
+        </a>
+        
+        <a  class="建站 "
+           href="/2019/10/12/Linux下安装使用nodjs+pm2/"
+           data-tag="工具,服務器"
+           data-author="" >
+            <span class="post-title" title="Linux下安装使用nodejs+pm2">Linux下安装使用nodejs+pm2</span>
+            <span class="post-date" title="2019-10-12 09:40:48">2019/10/12</span>
         </a>
         
         <a  class="前端 "
-           href="/2019/10/06/HTML5 应用程序缓存  manifest/"
+           href="/2019/10/09/HTML5 应用程序缓存  manifest/"
            data-tag="前端,HTML"
            data-author="" >
             <span class="post-title" title="HTML5 应用程序缓存  manifest">HTML5 应用程序缓存  manifest</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+            <span class="post-date" title="2019-10-09 09:33:17">2019/10/09</span>
         </a>
         
-        <a  class="前端 "
-           href="/2019/10/06/json字符串、json对象、数组 三者之间的转换/"
-           data-tag="前端,JavaScript"
+        <a  class="数据 "
+           href="/2019/10/09/Linux-mysql/"
+           data-tag="工具,数据库"
            data-author="" >
-            <span class="post-title" title="json字符串、json对象、数组 三者之间的转换">json字符串、json对象、数组 三者之间的转换</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+            <span class="post-title" title="Linux下安装mysql和走过的坑">Linux下安装mysql和走过的坑</span>
+            <span class="post-date" title="2019-10-09 00:47:11">2019/10/09</span>
+        </a>
+        
+        <a  class="建站 "
+           href="/2019/10/09/linux-nginx/"
+           data-tag="工具,服務器"
+           data-author="" >
+            <span class="post-title" title="Linux下安装nginx">Linux下安装nginx</span>
+            <span class="post-date" title="2019-10-09 00:19:38">2019/10/09</span>
         </a>
         
         <a  class="前端 "
-           href="/2019/10/06/Token身份验证/"
+           href="/2019/10/03/Token身份验证/"
            data-tag="前端,JavaScript,Token"
            data-author="" >
             <span class="post-title" title="Token身份验证">Token身份验证</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+            <span class="post-date" title="2019-10-03 23:27:02">2019/10/03</span>
         </a>
         
         <a  class="前端 "
-           href="/2019/10/06/内存溢出内存泄露/"
-           data-tag="开发常识"
+           href="/2019/09/20/CSS隐藏元素的五种方法/"
+           data-tag="前端,css"
            data-author="" >
-            <span class="post-title" title="内存溢出内存泄露">内存溢出内存泄露</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+            <span class="post-title" title="CSS隐藏元素的五种方法">CSS隐藏元素的五种方法</span>
+            <span class="post-date" title="2019-09-20 00:17:50">2019/09/20</span>
         </a>
         
         <a  class="前端 "
-           href="/2019/10/06/Less的使用/"
+           href="/2019/08/15/json字符串、json对象、数组 三者之间的转换/"
+           data-tag="前端,JavaScript"
+           data-author="" >
+            <span class="post-title" title="json字符串、json对象、数组 三者之间的转换">json字符串、json对象、数组 三者之间的转换</span>
+            <span class="post-date" title="2019-08-15 23:20:53">2019/08/15</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/08/09/JS中forEach,for...in,for..of的区别/"
+           data-tag="前端,JS"
+           data-author="" >
+            <span class="post-title" title="forEach,for...in,for..of的区别">forEach,for...in,for..of的区别</span>
+            <span class="post-date" title="2019-08-09 18:52:39">2019/08/09</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/08/03/generator 函数/"
+           data-tag="前端,JS,ES6"
+           data-author="" >
+            <span class="post-title" title="generator 函数">generator 函数</span>
+            <span class="post-date" title="2019-08-03 19:47:54">2019/08/03</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/07/22/VUE生命周期图解/"
+           data-tag="框架,前端,VUE"
+           data-author="" >
+            <span class="post-title" title="VUE生命周期图解">VUE生命周期图解</span>
+            <span class="post-date" title="2019-07-22 19:21:09">2019/07/22</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/07/04/vue-collection1/"
+           data-tag="框架,前端,VUE"
+           data-author="" >
+            <span class="post-title" title="VUE框架基础指令">VUE框架基础指令</span>
+            <span class="post-date" title="2019-07-04 22:12:23">2019/07/04</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/06/22/MarkDown-typora/"
+           data-tag="文本工具"
+           data-author="" >
+            <span class="post-title" title="markdown工具 Typora 教程">markdown工具 Typora 教程</span>
+            <span class="post-date" title="2019-06-22 22:39:56">2019/06/22</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/06/22/Less的使用/"
            data-tag="CSS,Less"
            data-author="" >
             <span class="post-title" title="Less的使用">Less的使用</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+            <span class="post-date" title="2019-06-22 17:45:34">2019/06/22</span>
         </a>
         
         <a  class="前端 "
-           href="/2019/10/06/css文本间距和文本溢出的处理 (copy)/"
+           href="/2019/06/12/css文本间距和文本溢出的处理 (copy)/"
            data-tag="前端,css"
            data-author="" >
             <span class="post-title" title="css文本间距和文本溢出的处理">css文本间距和文本溢出的处理</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+            <span class="post-date" title="2019-06-12 09:35:32">2019/06/12</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/06/09/内存溢出内存泄露/"
+           data-tag="开发常识"
+           data-author="" >
+            <span class="post-title" title="内存溢出内存泄露">内存溢出内存泄露</span>
+            <span class="post-date" title="2019-06-09 22:00:52">2019/06/09</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/06/08/css文本间距和文本溢出的处理/"
+           data-tag="前端,css"
+           data-author="" >
+            <span class="post-title" title="css文本间距和文本溢出的处理">css文本间距和文本溢出的处理</span>
+            <span class="post-date" title="2019-06-08 12:23:12">2019/06/08</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/05/29/CSS隐藏元素的四种方法/"
+           data-tag="前端,css"
+           data-author="" >
+            <span class="post-title" title="CSS隐藏元素的五种方法">CSS隐藏元素的五种方法</span>
+            <span class="post-date" title="2019-05-29 20:27:19">2019/05/29</span>
         </a>
         
         <a  class="服务器 "
-           href="/2019/10/06/流媒体服务器的认识/"
+           href="/2019/05/12/流媒体服务器的认识/"
            data-tag="服务器,视频"
            data-author="" >
             <span class="post-title" title="跨域以及跨域的方法">跨域以及跨域的方法</span>
-            <span class="post-date" title="2019-10-06 22:27:55">2019/10/06</span>
+            <span class="post-date" title="2019-05-12 14:23:06">2019/05/12</span>
+        </a>
+        
+        <a  class="前端 "
+           href="/2019/04/06/AJAX基础/"
+           data-tag="前端,AJAX"
+           data-author="" >
+            <span class="post-title" title="AJAX基础">AJAX基础</span>
+            <span class="post-date" title="2019-04-06 09:30:34">2019/04/06</span>
         </a>
         
     </nav>
