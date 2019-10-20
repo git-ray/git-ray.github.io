@@ -6,27 +6,18 @@
   <meta name="keywords" content=" CSS , Less ">
   <meta name="description" content="Less的使用 | 徐小虫">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="[TOC] 什么是跨域由于浏览器同源策略，凡是发送请求url的协议、域名、端口三者之间任意一个与当前页面地址不同即为跨域。存在跨域的情况：  网络协议不同，如http协议访问https协议。 端口不同，如80端口访问8080端口。 域名不同，如qianduanblog.com访问baidu.com。 子域名不同，如abc.qianduanblog.com访问def.qianduanblog.com">
-<meta name="keywords" content="前端,JavaScript">
+<meta name="description" content="个人博客搭建一条龙,一条龙!，初级前端  :snake: 徐小虫 以身示范 写给也想写博客的你，后续扩展和遇到的问题都会持续更新。  本篇主要 通过 linux+nodejs+github+hexo+nginx实现 本地提交代码=》 服务器端获取代码=》网页自动更新内容以下流程有很多会借鉴甚至粘贴复制其他博主的 零碎的东西 若有侵权请联系我。 主要分为： [TOC]  1.nodejs+hexo的">
+<meta name="keywords" content="工具,服務器">
 <meta property="og:type" content="article">
-<meta property="og:title" content="跨域以及跨域的方法">
-<meta property="og:url" content="https://git-ray.github.io/2019/10/06/跨域以及跨域的方法/index.html">
+<meta property="og:title" content="hexo博客网站一条龙">
+<meta property="og:url" content="https://git-ray.github.io/2019/10/12/linux+nginx+hexo/index.html">
 <meta property="og:site_name" content="徐小虫">
-<meta property="og:description" content="[TOC] 什么是跨域由于浏览器同源策略，凡是发送请求url的协议、域名、端口三者之间任意一个与当前页面地址不同即为跨域。存在跨域的情况：  网络协议不同，如http协议访问https协议。 端口不同，如80端口访问8080端口。 域名不同，如qianduanblog.com访问baidu.com。 子域名不同，如abc.qianduanblog.com访问def.qianduanblog.com">
+<meta property="og:description" content="个人博客搭建一条龙,一条龙!，初级前端  :snake: 徐小虫 以身示范 写给也想写博客的你，后续扩展和遇到的问题都会持续更新。  本篇主要 通过 linux+nodejs+github+hexo+nginx实现 本地提交代码=》 服务器端获取代码=》网页自动更新内容以下流程有很多会借鉴甚至粘贴复制其他博主的 零碎的东西 若有侵权请联系我。 主要分为： [TOC]  1.nodejs+hexo的">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://i.loli.net/2019/10/20/qWMjmuYSEQ9GfBL.png">
-<meta property="og:image" content="https://i.loli.net/2019/10/20/NCUyL6HvoDalPEV.png">
-<meta property="og:image" content="https://i.loli.net/2019/10/20/BtbPwnQGYCxeohu.png">
-<meta property="og:image" content="https://i.loli.net/2019/10/20/5rznbLxMdjhBoWV.png">
-<meta property="og:image" content="https://i.loli.net/2019/10/20/yROB9aW2xKNVwD5.png">
-<meta property="og:image" content="https://i.loli.net/2019/10/20/IYrfgTRkWOCcVoZ.png">
-<meta property="og:image" content="https://i.loli.net/2019/10/20/fBALds24kGEDpYM.png">
-<meta property="og:image" content="https://i.loli.net/2019/10/20/avFLdskC1ZQEwAi.png">
 <meta property="og:updated_time" content="2019-10-07T14:27:55.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="跨域以及跨域的方法">
-<meta name="twitter:description" content="[TOC] 什么是跨域由于浏览器同源策略，凡是发送请求url的协议、域名、端口三者之间任意一个与当前页面地址不同即为跨域。存在跨域的情况：  网络协议不同，如http协议访问https协议。 端口不同，如80端口访问8080端口。 域名不同，如qianduanblog.com访问baidu.com。 子域名不同，如abc.qianduanblog.com访问def.qianduanblog.com">
-<meta name="twitter:image" content="https://i.loli.net/2019/10/20/qWMjmuYSEQ9GfBL.png">
+<meta name="twitter:title" content="hexo博客网站一条龙">
+<meta name="twitter:description" content="个人博客搭建一条龙,一条龙!，初级前端  :snake: 徐小虫 以身示范 写给也想写博客的你，后续扩展和遇到的问题都会持续更新。  本篇主要 通过 linux+nodejs+github+hexo+nginx实现 本地提交代码=》 服务器端获取代码=》网页自动更新内容以下流程有很多会借鉴甚至粘贴复制其他博主的 零碎的东西 若有侵权请联系我。 主要分为： [TOC]  1.nodejs+hexo的">
 
 
 <link rel="icon" href="/img/avatar.jpg">
