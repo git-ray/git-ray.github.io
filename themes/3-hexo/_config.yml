@@ -64,7 +64,7 @@ menu:
       on: false
       url: /photo
       type: 1  # 跳转类型 1：站内异步跳转
-    徐小虫:
+    雷明:
       on: false
       url: http://xuxc.xyz/
       type: 2  # 跳转类型 2：当前页面跳转
@@ -194,7 +194,7 @@ mathjax:
 
 # 友情链接
 friends:
-  徐小虫: http://xuxc.xyz/
+  雷明: http://xuxc.xyz/
 
 ##########评论设置#############
 comment:
